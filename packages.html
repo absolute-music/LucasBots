@@ -23,26 +23,6 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-select.js"></script>
-<script>
-  $(document).ready(function () {
-    var mySelect = $('#first-disabled2');
-
-    $('#special').on('click', function () {
-      mySelect.find('option:selected').prop('disabled', true);
-      mySelect.selectpicker('refresh');
-    });
-
-    $('#special2').on('click', function () {
-      mySelect.find('option:disabled').prop('disabled', false);
-      mySelect.selectpicker('refresh');
-    });
-
-    $('#basic2').selectpicker({
-      liveSearch: true,
-      maxOptions: 1
-    });
-  });
-</script>
 <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
 <link href="css/jquery.uls.css" rel="stylesheet"/>
 <link href="css/jquery.uls.grid.css" rel="stylesheet"/>
@@ -54,17 +34,6 @@
 <script src="js/jquery.uls.languagefilter.js"></script>
 <script src="js/jquery.uls.regionfilter.js"></script>
 <script src="js/jquery.uls.core.js"></script>
-<script>
-			$( document ).ready( function() {
-				$( '.uls-trigger' ).uls( {
-					onSelect : function( language ) {
-						var languageName = $.uls.data.getAutonym( language );
-						$( '.uls-trigger' ).text( languageName );
-					},
-					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
-				} );
-			} );
-		</script>
 		<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
     <script src="js/easyResponsiveTabs.js"></script>
 </head>
@@ -110,10 +79,10 @@
 									<li>Maximum of 20 commands</li>
 									<li>Fun and moderation commands</li>
 									<li>Custom info (Prefix, avatar, ect)</li>
-									<li>3 Custom commands</li>
+									<li>5 Custom commands</li>
 									<li>Bot support</li>
 									<li>Stylish help command</li>
-									<li>Custom status (Watching, listening, ect)</li>
+									<li>Custom status (Watching, playing, ect)</li>
 									<div class="clearfix"></div>
 								</ul>
 								<a data-selly-product="8e725bac" class="buy-btn">BUY NOW</a>
